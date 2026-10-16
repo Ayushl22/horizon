@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Prediction of Customer Churn Behavior in the Telecommunication Industry Using Machine Learning Models",
+    "authors": "Victor Chang, Karl Hall, Qianwen Ariel Xu, Folakemi Ololade Amao, Meghana Ashok Ganatra and Vladlena Benson",
+    "year": 2024,
+    "status": "Algorithms 17(6), 231; author university repository and publisher record",
+    "url": "https://research.aston.ac.uk/en/publications/prediction-of-customer-churn-behavior-in-the-telecommunication-in/",
+    "doi": "10.3390/a17060231",
+    "review": "The telecom study compares machine learning classifiers including Decision Tree and Random Forest and discusses LIME/SHAP explanations. It motivates comparing a simple tree with an ensemble and inspecting several error metrics. Our project instead uses validation permutation importance and a frozen test protocol. Published performance on a different dataset is not an Iranian Churn benchmark; the paper does not establish that its data cleaning matches ours."
+  },
+  {
+    "title": "A framework to improve churn prediction performance in retail banking",
+    "authors": "Joao B. G. Brito, Guilherme B. Bucco, Rodrigo Heldt, Joao L. Becker, Cleo S. Silveira, Fernando B. Luce and Michel J. Anzanello",
+    "year": 2024,
+    "status": "Financial Innovation 10, 17; publisher version of record",
+    "url": "https://link.springer.com/article/10.1186/s40854-023-00558-3",
+    "doi": "10.1186/s40854-023-00558-3",
+    "review": "This banking framework emphasises RFM feature engineering and class-imbalance preprocessing rather than choosing an algorithm alone. It supports documenting preparation and minority-class evaluation. Unlike its transaction-scale sampling framework, our small aggregate-data project uses balanced classifier weights and no synthetic resampling. Its feature construction cannot be replicated from this CSV. Predictive ranking and segmentation remain different tasks in our implementation."
+  },
+  {
+    "title": "Customer segmentation application based on K-Means",
+    "authors": "Jiaqi Zhao",
+    "year": 2024,
+    "status": "Applied and Computational Engineering 47, 242-247; publisher record",
+    "url": "https://ace.ewapub.com/article/view/11000",
+    "doi": "10.54254/2755-2721/47/20241400",
+    "review": "This paper reviews customer segmentation applications and introduces K-Means with RFM-style analysis. It motivates an interpretable grouping task alongside prediction, but does not justify treating a cluster ID as a churn label. Our telecom usage features are not transactional RFM. We evaluate distance-based groups using training silhouette, inertia and minimum size, and name them from training characteristics rather than assumed marketing value."
+  },
+  {
+    "title": "Optimizing Customer Segmentation in Online Retail Transactions through the Implementation of the K-Means Clustering Algorithm",
+    "authors": "Desi Adrianti Awaliyah, Budi Prasetiyo, Rini Muzayanah and Apri Dwi Lestari",
+    "year": 2024,
+    "status": "Scientific Journal of Informatics 11(2), 539-548; publisher record",
+    "url": "https://journal.unnes.ac.id/journals/sji/article/view/6137",
+    "doi": "10.15294/sji.v11i2.6137",
+    "review": "This retail study combines RFM-oriented customer analysis with K-Means and an elbow diagnostic, reporting three groups for its data. It supports examining inertia and feature profiles rather than reporting only a cluster count. Our reproducible training silhouette rule selects its own k and does not import the paper's three-group result. Feature scaling, category encoding and data populations differ, so numerical quality measures are not directly comparable."
+  },
+  {
+    "title": "Analisis Pola Dan Prediksi Churn: Hybrid Segmentasi SOM+K-Means Dan Klasifikasi Machine Learning",
+    "authors": "Rizka Rahmadhani and Ermatita",
+    "year": 2026,
+    "status": "JURIKOM 13(1), 335-346; publisher record, 28 February 2026",
+    "url": "https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/view/9409",
+    "doi": "10.30865/jurikom.v13i1.9409",
+    "review": "The study separates a SOM plus K-Means grouping stage from supervised classification and uses cluster labels as classifier inputs. It highlights the distinction between segmentation and outcome prediction. Our architecture is deliberately simpler: no SOM, resampling or cluster-label feature is added to the churn classifiers. Segments are a parallel descriptive output. Churn rates are attached by split only after fitting and never choose k."
+  }
+]
